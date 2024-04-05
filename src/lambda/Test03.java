@@ -4,21 +4,20 @@ package lambda;
 //함수형 인터페이스 : 추상메소드가 단 1개인 인터페이스이다.
 
 @FunctionalInterface
-interface MyFunc4{
+interface MyFunc3{
 	int add(int x, int y);
 }
 
-public class Test4 {
+public class Test03 {
 	public static void main(String[] args) {
-		MyFunc4 myfunc4 = new MyFunc4() {
-			
+		MyFunc3 myfunc3 = new MyFunc3() {
 			@Override
 			public int add(int x, int y) {
-			
-				return x + y;
+				return x + y ;
 			}
 		};
-		int res = Myfunc4.add(40,50);
+		
+		int res = myfunc3.add(10, 20);
 		System.out.println("res : " + res);
 	}
 }
